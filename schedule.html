@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | Travelith</title>
+  <link rel="stylesheet" href="PROPBP2NEW.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Travelith<span>Indonesia</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html" class="active">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+  </header>
+
+  <!-- HEADER SCHEDULE -->
+  <section class="schedule-header">
+    <h1>Plan Your Next Adventure</h1>
+    <p>Temukan jadwal tour terbaik kami dan nikmati pengalaman wisata tak terlupakan bersama Travelith Indonesia.</p>
+  </section>
+
+  <!-- FILTER SECTION -->
+<section class="schedule-filters">
+  <input type="text" id="searchInput" placeholder="Cari destinasi atau kota...">
+  <select id="categoryFilter">
+    <option value="all">Semua Kategori</option>
+    <option value="Adventure">Adventure</option>
+    <option value="Nature">Nature</option>
+    <option value="Culture">Culture</option>
+  </select>
+  <input type="date" id="dateFilter">
+</section>
+
+  <!-- LIST SCHEDULE -->
+  <section class="schedule-list">
+    <div class="schedule-card" data-name="Bromo Sunrise Experience" data-category="Adventure" data-date="2025-11-25">
+  <img src="image/6763cd9174641985422603.webp" alt="Bromo Sunrise">
+  <div class="schedule-info">
+    <h3>Bromo Sunrise Experience</h3>
+    <p class="date">25 - 27 November 2025</p>
+    <p class="desc">Nikmati pemandangan matahari terbit dari Gunung Bromo dan kunjungi lautan pasir legendaris.</p>
+    <div class="meta">
+      <span>3 Hari 2 Malam</span>
+      <span>Rp 1.250.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+
+<div class="schedule-card" data-name="Labuan Bajo Island Hopping" data-category="Nature" data-date="2025-12-10">
+  <img src="image/Pantai-Mawun-Lombok-1.jpg" alt="Labuan Bajo">
+  <div class="schedule-info">
+    <h3>Labuan Bajo Island Hopping</h3>
+    <p class="date">10 - 14 Desember 2025</p>
+    <p class="desc">Menjelajahi keindahan pulau-pulau eksotis di Labuan Bajo dan snorkeling di perairan biru jernih.</p>
+    <div class="meta">
+      <span>5 Hari 4 Malam</span>
+      <span>Rp 3.800.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+
+<div class="schedule-card" data-name="Bali Culture & Nature Tour" data-category="Culture" data-date="2026-01-03">
+  <img src="image/olvu6sgb3dcdjwlcpts3.jpg" alt="Bali Culture">
+  <div class="schedule-info">
+    <h3>Bali Culture & Nature Tour</h3>
+    <p class="date">3 - 6 Januari 2026</p>
+    <p class="desc">Rasakan perpaduan budaya dan alam Bali dari Ubud hingga pantai-pantai eksotis di Selatan.</p>
+    <div class="meta">
+      <span>4 Hari 3 Malam</span>
+      <span>Rp 2.100.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+
+<div class="schedule-card" data-name="Raja Ampat Diving Trip" data-category="Adventure" data-date="2026-02-18">
+  <img src="image/pemandangan-pulau2-kecil.jpg" alt="Raja Ampat Diving">
+  <div class="schedule-info">
+    <h3>Raja Ampat Diving Trip</h3>
+    <p class="date">18 - 23 Februari 2026</p>
+    <p class="desc">Menyelam di perairan paling jernih di dunia dengan keanekaragaman hayati laut yang menakjubkan di Raja Ampat.</p>
+    <div class="meta">
+      <span>6 Hari 5 Malam</span>
+      <span>Rp 5.500.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+
+<div class="schedule-card" data-name="Yogyakarta Heritage Tour" data-category="Culture" data-date="2026-03-05">
+  <img src="image/Yogyakarta_Indonesia_Tugu-Yogyakarta-02.jpg" alt="Yogyakarta Tour">
+  <div class="schedule-info">
+    <h3>Yogyakarta Heritage Tour</h3>
+    <p class="date">5 - 8 Maret 2026</p>
+    <p class="desc">Menjelajahi warisan budaya klasik seperti Candi Prambanan, Keraton, dan Malioboro yang legendaris.</p>
+    <div class="meta">
+      <span>4 Hari 3 Malam</span>
+      <span>Rp 1.950.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+
+<div class="schedule-card" data-name="Lombok Beach Getaway" data-category="Nature" data-date="2026-04-10">
+  <img src="image/pexels-javaistan-15879944-scaled.jpg" alt="Lombok Beach">
+  <div class="schedule-info">
+    <h3>Lombok Beach Getaway</h3>
+    <p class="date">10 - 13 April 2026</p>
+    <p class="desc">Nikmati keindahan pantai pasir putih dan kejernihan laut Lombok dengan akomodasi tepi pantai yang nyaman.</p>
+    <div class="meta">
+      <span>4 Hari 3 Malam</span>
+      <span>Rp 2.400.000 / pax</span>
+    </div>
+    <button class="detail-btn">Lihat Detail</button>
+  </div>
+</div>
+</section>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const categoryFilter = document.getElementById('categoryFilter');
+const dateFilter = document.getElementById('dateFilter');
+const cards = document.querySelectorAll('.schedule-card');
+
+function filterSchedules() {
+  const searchText = searchInput.value.toLowerCase();
+  const category = categoryFilter.value;
+  const selectedDate = dateFilter.value;
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    const cardCategory = card.dataset.category;
+    const cardDate = card.dataset.date;
+
+    const matchSearch = name.includes(searchText);
+    const matchCategory = category === "all" || cardCategory === category;
+    const matchDate = !selectedDate || cardDate === selectedDate;
+
+    if (matchSearch && matchCategory && matchDate) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+searchInput.addEventListener('input', filterSchedules);
+categoryFilter.addEventListener('change', filterSchedules);
+dateFilter.addEventListener('change', filterSchedules);
+</script>
+
+
+</body>
+</html>

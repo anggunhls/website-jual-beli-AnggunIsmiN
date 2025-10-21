@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Travelith</title>
+  <link rel="stylesheet" href="PROPBP2NEW.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2e0ad6b60.js" crossorigin="anonymous"></script>
+  <style>
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    .modal h3 {
+      font-size: 22px;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .modal p {
+      font-size: 15px;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    .modal-actions {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .confirm-btn-modal,
+    .cancel-btn-modal {
+      border: none;
+      border-radius: 30px;
+      padding: 10px 24px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .confirm-btn-modal {
+      background: linear-gradient(90deg, #7b61ff, #5b3cf6);
+      color: white;
+    }
+
+    .cancel-btn-modal {
+      background: #eee;
+      color: #444;
+    }
+
+    .confirm-btn-modal:hover {
+      background: linear-gradient(90deg, #5b3cf6, #7b61ff);
+      transform: translateY(-2px);
+    }
+
+    .cancel-btn-modal:hover {
+      background: #ddd;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Travelith<span>Indonesia</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="booking-hero">
+    <div class="booking-text">
+      <h2>Book Your Dream Trip</h2>
+      <p>
+        Plan your next adventure easily with Travelith Indonesia. Fill out the
+        form below to confirm your travel package.
+      </p>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-section">
+    <div class="booking-container">
+      <!-- FORM PEMESANAN -->
+      <div class="booking-form reveal">
+        <h3>Booking Details</h3>
+
+        <form id="bookingForm">
+          <h4>Personal Information</h4>
+          <input type="text" id="fullname" placeholder="Full Name" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="text"
+            id="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="number"
+            id="travelers"
+            placeholder="Number of Travelers"
+            required
+          />
+
+          <h4>Travel Information</h4>
+          <select id="destination" required>
+            <option value="">Select Destination</option>
+            <option value="Bali">Bali</option>
+            <option value="Lombok">Lombok</option>
+            <option value="Bromo">Bromo</option>
+            <option value="Labuan Bajo">Labuan Bajo</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+          </select>
+
+          <input type="date" id="travelDate" required />
+
+          <select id="package" required>
+            <option value="">Select Package</option>
+            <option value="Budget">Budget</option>
+            <option value="Premium">Premium</option>
+            <option value="Exclusive">Exclusive</option>
+          </select>
+
+          <select id="duration" required>
+            <option value="">Trip Duration</option>
+            <option value="2D1N">2 Days 1 Night</option>
+            <option value="3D2N">3 Days 2 Nights</option>
+            <option value="5D4N">5 Days 4 Nights</option>
+          </select>
+
+          <h4>Payment</h4>
+          <select id="payment" required>
+            <option value="">Select Payment Method</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="E-Wallet">E-Wallet (OVO, DANA, GoPay)</option>
+          </select>
+
+          <button type="submit" class="confirm-btn">Confirm Booking</button>
+        </form>
+      </div>
+
+      <!-- RINGKASAN PEMESANAN -->
+      <div class="booking-summary reveal" id="summaryCard">
+        <h3>Booking Summary</h3>
+        <img
+          id="summaryImage"
+          src="image/olvu6sgb3dcdjwlcpts3.jpg"
+          alt="Destination Preview"
+        />
+        <ul>
+          <li><strong>Destination:</strong> <span id="sumDestination">Bali</span></li>
+          <li><strong>Package:</strong> <span id="sumPackage">Premium</span></li>
+          <li><strong>Duration:</strong> <span id="sumDuration">3D2N</span></li>
+          <li><strong>Total Price:</strong> <span id="sumPrice">Rp 3.500.000</span></li>
+        </ul>
+        <p class="note">
+          *Prices may vary based on season and availability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP KONFIRMASI -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <h3>Confirm Your Booking</h3>
+      <div id="modalContent"></div>
+      <div class="modal-actions">
+        <button class="confirm-btn-modal" id="confirmYes">Confirm</button>
+        <button class="cancel-btn-modal" id="confirmNo">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Travelith Indonesia — Your Smart Travel Companion </p>
+  </footer>
+
+  <script>
+
+    const summary = {
+      destination: document.getElementById("sumDestination"),
+      package: document.getElementById("sumPackage"),
+      duration: document.getElementById("sumDuration"),
+      price: document.getElementById("sumPrice"),
+      image: document.getElementById("summaryImage"),
+    };
+
+    const form = {
+      destination: document.getElementById("destination"),
+      package: document.getElementById("package"),
+      duration: document.getElementById("duration"),
+      travelers: document.getElementById("travelers"),
+      fullname: document.getElementById("fullname"),
+      email: document.getElementById("email"),
+      phone: document.getElementById("phone"),
+      date: document.getElementById("travelDate"),
+      payment: document.getElementById("payment"),
+    };
+
+    const destinationImages = {
+      Bali: "image/olvu6sgb3dcdjwlcpts3.jpg",
+      Lombok: "image/pexels-javaistan-15879944-scaled.jpg",
+      Bromo: "image/6763cd9174641985422603.webp",
+      "Labuan Bajo": "image/Pantai-Mawun-Lombok-1.jpg",
+      Yogyakarta: "image/Yogyakarta_Indonesia_Tugu-Yogyakarta-02.jpg",
+    };
+
+    const basePrices = {
+      Budget: 1500000,
+      Premium: 3500000,
+      Exclusive: 5000000,
+    };
+
+    function updateSummary() {
+      const dest = form.destination.value;
+      const pack = form.package.value;
+      const dur = form.duration.value;
+      const travelers = parseInt(form.travelers.value) || 1;
+
+      if (dest) summary.destination.textContent = dest;
+      if (pack) summary.package.textContent = pack;
+      if (dur) summary.duration.textContent = dur;
+
+      if (destinationImages[dest]) {
+        summary.image.classList.add("fade-out");
+        setTimeout(() => {
+          summary.image.src = destinationImages[dest];
+          summary.image.classList.remove("fade-out");
+          summary.image.classList.add("fade-in");
+          setTimeout(() => summary.image.classList.remove("fade-in"), 800);
+        }, 300);
+      }
+
+      if (pack) {
+        const total = basePrices[pack] * travelers;
+        summary.price.textContent = "Rp " + total.toLocaleString("id-ID");
+      }
+    }
+
+    ["destination", "package", "duration", "travelers"].forEach((id) => {
+      form[id].addEventListener("change", updateSummary);
+      form[id].addEventListener("input", updateSummary);
+    });
+
+    const modalOverlay = document.getElementById("modalOverlay");
+    const modalContent = document.getElementById("modalContent");
+    const confirmYes = document.getElementById("confirmYes");
+    const confirmNo = document.getElementById("confirmNo");
+
+    document
+      .getElementById("bookingForm")
+      .addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        modalContent.innerHTML = `
+          <p><strong>Name:</strong> ${form.fullname.value}</p>
+          <p><strong>Email:</strong> ${form.email.value}</p>
+          <p><strong>Phone:</strong> ${form.phone.value}</p>
+          <p><strong>Destination:</strong> ${form.destination.value}</p>
+          <p><strong>Package:</strong> ${form.package.value}</p>
+          <p><strong>Duration:</strong> ${form.duration.value}</p>
+          <p><strong>Travel Date:</strong> ${form.date.value}</p>
+          <p><strong>Payment:</strong> ${form.payment.value}</p>
+          <p><strong>Total Price:</strong> ${summary.price.textContent}</p>
+        `;
+
+        modalOverlay.style.display = "flex";
+      });
+
+    confirmYes.addEventListener("click", () => {
+      modalOverlay.style.display = "none";
+      alert("Booking berhasil dikonfirmasi! Terima kasih sudah memilih Travelith Indonesia");
+      document.getElementById("bookingForm").reset();
+    });
+
+    confirmNo.addEventListener("click", () => {
+      modalOverlay.style.display = "none";
+    });
+
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,549 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Travelith</title>
+  <link rel="stylesheet" href="PROPBP2NEW.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap-grid.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Travelith<span>Indonesia</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+  </header>
+
+  <!-- Home -->
+<section class="hero-home">
+  <div class="hero-bg">
+    <img src="image/040670500_1630383811-white-crater-2337128_1280_1_.webp" alt="Destination View">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <h2>Discover Your</h2>
+    <h1>Next <span>Destination</span></h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Where are you going?">
+      <button><b>Cari</b></button>
+    </div>
+  </div>
+
+  <div class="tour-types">
+    <div class="tour-card" data-image="olvu6sgb3dcdjwlcpts3.jpg">
+      <img src="image/olvu6sgb3dcdjwlcpts3.jpg" alt="Windsurfing">
+      <h4>Bali</h4>
+      <p>80 Destinations</p>
+    </div>
+    <div class="tour-card" data-image="6763cd9174641985422603.webp">
+      <img src="image/6763cd9174641985422603.webp" alt="Paragliding">
+      <h4>Bromo</h4>
+      <p>65 Destinations</p>
+    </div>
+    <div class="tour-card" data-image="pulau.jpg">
+      <img src="image/pulau.jpg" alt="Adventure">
+      <h4>Aceh</h4>
+      <p>100 Destinations</p>
+    </div>
+    <div class="tour-card" data-image="2838871495.jpg">
+      <img src="image/2838871495.jpg" alt="Snorkeling">
+      <h4>Semarang</h4>
+      <p>45 Destinations</p>
+    </div>
+  </div>
+  <div class="tour-text">
+    <div class="tour-info">
+      <h4>✦ Choose Your Types</h4>
+      <h2>Provide Best Location<br>For your Vacation</h2>
+      <button class="talk-btn" onclick="window.location.href='contact.html#contact-form'">Let's Talk</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Top Destinations -->
+  <section class="destinations">
+    <h2>Top Destinations</h2>
+    <p class="subtitle">Popular spots in Switzerland</p>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-type="popular">Popular</button>
+      <button class="filter-btn" data-type="viral">Viral</button>
+      <button class="filter-btn" data-type="hidden">Hidden Gems</button>
+    </div>
+
+    <div class="destination-container">
+      <button class="scroll-btn left">&#10094;</button>
+
+      <div class="cards-wrapper">
+      </div>
+
+      <button class="scroll-btn right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+<section class="about-us" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Travelith Indonesia</h2>
+      <p class="tagline">Discover - Explore - Experience</p>
+      <p class="desc">
+        Travelith Indonesia adalah platform wisata digital yang menghadirkan kemudahan dalam merencanakan liburan impian Anda.
+        Kami menyediakan berbagai layanan mulai dari pemesanan tiket destinasi, penginapan, transportasi, hingga itinerary otomatis 
+        semua dalam satu tempat. Dengan jaringan mitra wisata di seluruh Indonesia, kami berkomitmen untuk menghadirkan pengalaman
+        perjalanan yang aman, nyaman, dan tak terlupakan.
+      </p>
+
+      <div class="features">
+        <div class="feature-card reveal">
+          <h4>Destinasi Lengkap</h4>
+          <p>Jelajahi wisata alam, budaya, dan kuliner dari Sabang sampai Merauke.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h4>Itinerary Otomatis</h4>
+          <p>Atur jadwal perjalanan Anda dengan rekomendasi waktu terbaik.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h4>Layanan 24 Jam</h4>
+          <p>Tim support kami siap membantu Anda kapan pun dibutuhkan.</p>
+        </div>
+        <div class="feature-card reveal">
+          <h4>Eco-Friendly Tourism</h4>
+          <p>Kami mendukung pariwisata berkelanjutan dan ramah lingkungan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="image/pexels-theo-decker-5946217.jpg" alt="About Travelith">
+    </div>
+  </div>
+</section>
+
+<!-- Budget Tour -->
+<section class="budget-preview" id="budget-tour">
+  <div class="budget-container">
+    <div class="budget-image">
+      <img src="image/6763cd9174641985422603.webp" alt="Bromo Tour">
+    </div>
+
+    <div class="budget-text">
+      <h5>Budget Tour</h5>
+      <h2>Bromo Tengger Semeru</h2>
+      <p>
+        Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.614 meter di atas permukaan laut dan berada dalam empat wilayah kabupaten, yakni Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang.
+      </p>
+
+      <h3>Fasilitas :</h3>
+      <ol class="facilities-list">
+        <li><span>Transportasi pribadi & pemandu wisata berpengalaman</span></li>
+        <li><span>Penginapan nyaman selama 2 malam</span></li>
+        <li><span>Sarapan pagi & makan malam tradisional</span></li>
+        <li><span>Tiket masuk Taman Nasional Bromo Tengger Semeru</span></li>
+        <li><span>Spot foto & area melihat matahari terbit terbaik</span></li>
+        <li><span>Paket suvenir gratis dari pengrajin lokal</span></li>
+      </ol>
+
+<br>
+
+      <button class="book-btn" onclick="window.location.href='budget.html'">Booking Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="experience-section">
+  <div class="experience-container">
+    <div class="experience-text">
+      <h5>✈ Super Deal Customer ✈</h5>
+      <h2>Experience the World<br>with Our Company</h2>
+      <p>
+        Nikmati berbagai destinasi dan perjalanan baru bersama pemandu terpercaya kami di seluruh dunia. 
+        Ciptakan kenangan tak terlupakan melalui pengalaman wisata yang luar biasa dan penuh petualangan.
+      </p>
+
+      <ul class="experience-list">
+        <li>Pemesanan yang mudah dan cepat</li>
+        <li>Pemandu bersertifikat profesional</li>
+        <li>Hemat biaya perjalanan Anda</li>
+        <li>Konsultasi gratis sebelum berangkat</li>
+      </ul>
+
+      <div class="experience-btns">
+        <button class="learn-btn" onclick="window.location.href='schedule.html'">Learn More</button>
+        <div class="client-info">
+          <img src="image/pexels-matheushenrin-4936991.jpg" alt="Client">
+          <img src="image/pexels-meo-fernando-1487257-3049909.jpg" alt="Client">
+          <img src="image/pexels-michael-burrows-7147862.jpg" alt="Client">
+          <span>15k+ Satisfied Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-image">
+      <img src="image/Wisata_Surabaya_-_Kelenteng_Sangg.width-800.format-webp.webp" alt="Traveler" class="traveler">
+      <div class="floating-card">
+        <h4>24/7</h4>
+        <p>Guide Support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Special Offer -->
+<section class="special-offer">
+  <div class="offer-container">
+    <div class="offer-image-left">
+      <img src="image/Rekomendasi-Tempat-Wisata-Keluarga-di-Malang-Jawa-Timur.jpg" alt="Travel Left">
+    </div>
+
+    <div class="offer-content">
+      <h5>✦ Limited Time ✦</h5>
+      <h2>Get Special Offer</h2>
+      <p>Grab up to <strong>40% OFF</strong> on selected destinations. Make your dream vacation come true today!</p>
+      <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+      <h1 class="offer-discount"><span>40%</span> OFF</h1>
+    </div>
+
+    <div class="offer-image-right">
+      <img src="image/pulau.jpg" alt="Travel Right">
+    </div>
+  </div>
+</section>
+
+<!-- App Download -->
+<section class="app-download">
+  <div class="app-container">
+    
+    <div class="app-image">
+      <img src="image/Untitled design 2-Photoroom.png" alt="App Screen" class="phone-left">
+      <img src="image/Untitled design-Photoroom.png" alt="App Screen" class="phone-right">
+    </div>
+
+    <div class="app-text">
+      <h5>✦ Explore Tour ✦</h5>
+      <h2>Download Our App from<br>Google & App Store!</h2>
+      <p>
+        Manage your trips, book destinations, and get instant travel support anytime, anywhere.
+        Download now and enjoy exclusive features with one tap!
+      </p>
+
+      <div class="store-buttons">
+        <img src="image/f56cbae9-e83b-4b83-9a95-71a78334ee66-cover-removebg-preview.png" alt="Google Play/App Store">
+      </div>
+    </div>
+  </div>
+
+  <div class="app-stats">
+    <div class="stat">
+      <h3>998+</h3>
+      <p>Expert Guides</p>
+    </div>
+    <div class="stat">
+      <h3>1500+</h3>
+      <p>Popular Locations</p>
+    </div>
+    <div class="stat">
+      <h3>150+</h3>
+      <p>Agency Partners</p>
+    </div>
+    <div class="stat">
+      <h3>12K+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+</section>
+
+  <script>
+  const wrapper = document.querySelector('.cards-wrapper');
+  const leftBtn = document.querySelector('.scroll-btn.left');
+  const rightBtn = document.querySelector('.scroll-btn.right');
+
+  leftBtn.addEventListener('click', () => {
+    wrapper.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  rightBtn.addEventListener('click', () => {
+    wrapper.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  const destinations = document.querySelector('.destinations');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        destinations.classList.add('visible');  
+      } else {
+        destinations.classList.remove('visible'); 
+      }
+    });
+  }, { threshold: 0.3 }); 
+
+  observer.observe(destinations);
+  const reveals = document.querySelectorAll('.reveal');
+
+  window.addEventListener('scroll', () => {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 120;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  });
+  
+const tourCards = document.querySelectorAll('.tour-card');
+const heroBgImg = document.querySelector('.hero-bg img');
+
+tourCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const newImage = card.getAttribute('data-image');
+    tourCards.forEach(c => c.classList.remove('active'));
+card.classList.add('active');
+
+    heroBgImg.classList.add('fade-out');
+
+    setTimeout(() => {
+      heroBgImg.src = newImage;
+      heroBgImg.classList.remove('fade-out');
+      heroBgImg.classList.add('fade-in');
+
+      setTimeout(() => heroBgImg.classList.remove('fade-in'), 800);
+    }, 400);
+  });
+});
+
+const wrapperContainer = document.querySelector('.cards-wrapper');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const subtitle = document.querySelector('.subtitle'); 
+
+const destinationsData = {
+  popular: {
+    title: "Popular spots in Switzerland",
+    cards: [
+      { img: "image/6763cd9174641985422603.webp", title: "Bromo", desc: "Nikmati pemandangan matahari terbit dari Gunung Bromo dan kunjungi lautan pasir legendaris." },
+      { img: "image/Pantai-Mawun-Lombok-1.jpg", title: "Labuan Bajo", desc: "Menjelajahi keindahan pulau-pulau eksotis di Labuan Bajo dan snorkeling di perairan biru jernih." },
+      { img: "image/olvu6sgb3dcdjwlcpts3.jpg", title: "Bali", desc: "Rasakan perpaduan budaya dan alam Bali dari Ubud hingga pantai-pantai eksotis di Selatan." },
+      { img: "image/pemandangan-pulau2-kecil.jpg", title: "Raja Ampat", desc: "Menyelam di perairan paling jernih di dunia dengan keanekaragaman hayati laut yang menakjubkan." },
+      { img: "image/Yogyakarta_Indonesia_Tugu-Yogyakarta-02.jpg", title: "Yogyakarta", desc: "Menjelajahi warisan budaya klasik seperti Candi Prambanan, Keraton, dan Malioboro yang legendaris." }
+    ]
+  },
+
+  viral: {
+    title: "Trending destinations loved by travelers",
+    cards: [
+      { img: "image/pexels-javaistan-15879944-scaled.jpg", title: "Lombok", desc: "Nikmati keindahan pantai pasir putih dan kejernihan laut Lombok dengan akomodasi tepi pantai yang nyaman." },
+      { img: "image/pulau-beras-basah-kalimantan-timur.webp", title: "Samarinda", desc: "Jelajahi Pulau Beras Basah dan keindahan pesisir Kalimantan Timur yang eksotis, cocok untuk bersantai atau snorkeling." },
+      { img: "image/Rekomendasi-Tempat-Wisata-Keluarga-di-Malang-Jawa-Timur.jpg", title: "Malang", desc: "Udara sejuk, wisata, dan pesona alam seperti Coban Rondo dan Batu Flower Garden menjadikan Malang destinasi favorit." },
+      { img: "image/5fe33ee5a2197.jpg", title: "Gorontalo", desc: "Temukan pesona laut Gorontalo dengan diving spot yang menakjubkan dan pantai pasir putih yang memukau." },
+      { img: "image/040670500_1630383811-white-crater-2337128_1280_1_.webp", title: "Bandung", desc: "Kota dengan udara sejuk dan wisata ikonik seperti Kawah Putih, Lembang, dan kuliner legendaris yang menggugah selera." }
+    ]
+  },
+
+  hidden: {
+    title: "Underrated yet breathtaking places",
+    cards: [
+      { img: "image/55ab4783-85d9-4f10-a68e-6fca3125fed6-1735466532037-9226ddbaf0429d35148262d348ac2db8.webp", title: "Jakarta", desc: "Di balik hiruk-pikuknya, Jakarta menyimpan hidden gems seperti Kepulauan Seribu dan taman kota yang menenangkan." },
+      { img: "image/594151347.jpg", title: "Pontianak", desc: "Pontianak adalah Kota di garis khatulistiwa dengan pesona Sungai Kapuas dan wisata budaya Dayak yang memikat." },
+      { img: "image/2838871495.jpg", title: "Bogor", desc: "Kota hujan dengan kebun raya bersejarah, taman tropis, dan suasana pegunungan yang sejuk dan damai." },
+      { img: "image/1014723451.jpg", title: "Batu", desc: "Dikenal sebagai kota wisata dengan taman hiburan, kebun apel, serta pemandangan pegunungan yang menakjubkan.." },
+      { img: "image/5fe33ee5a2197.jpg", title: "Bekasi", desc: "Meski modern, Bekasi punya sisi tenang seperti wisata alam Hutan Kota dan tempat kuliner tersembunyi yang unik." }
+    ]
+  }
+};
+
+function updateDestinations(type) {
+  const data = destinationsData[type];
+  
+  subtitle.classList.add('fade-out');
+  setTimeout(() => {
+    subtitle.textContent = data.title;
+    subtitle.classList.remove('fade-out');
+    subtitle.classList.add('fade-in');
+  }, 300);
+
+  wrapperContainer.innerHTML = '';
+  data.cards.forEach(item => {
+    const card = document.createElement('div');
+    card.classList.add('destination-card');
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.title}">
+      <h3>${item.title}</h3>
+      <p>${item.desc}</p>
+      <button class="book-btn">Book</button>
+    `;
+    wrapperContainer.appendChild(card);
+  });
+}
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updateDestinations(btn.dataset.type);
+  });
+});
+
+updateDestinations('popular');
+
+const budgetSection = document.querySelector('.budget-preview');
+
+const budgetObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      budgetSection.classList.add('visible');
+    } else {
+      budgetSection.classList.remove('visible'); 
+    }
+  });
+}, { threshold: 0.3 }); 
+
+budgetObserver.observe(budgetSection);
+
+const experienceSection = document.querySelector('.experience-section');
+
+const experienceObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      experienceSection.classList.add('visible');
+    } else {
+      experienceSection.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.3 });
+
+experienceObserver.observe(experienceSection);
+
+const offerSection = document.querySelector('.special-offer');
+
+const offerObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      offerSection.classList.add('visible');
+    } else {
+      offerSection.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.3 });
+
+offerObserver.observe(offerSection);
+
+const appSection = document.querySelector('.app-download');
+
+const appObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      appSection.classList.add('visible');
+    } else {
+      appSection.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.3 });
+
+appObserver.observe(appSection);
+
+function attachBookEvents() {
+  document.querySelectorAll(".book-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.location.href = "booking.html";
+    });
+  });
+}
+
+function updateDestinations(type) {
+  const data = destinationsData[type];
+  subtitle.classList.add("fade-out");
+  setTimeout(() => {
+    subtitle.textContent = data.title;
+    subtitle.classList.remove("fade-out");
+    subtitle.classList.add("fade-in");
+  }, 300);
+
+  wrapperContainer.innerHTML = "";
+  data.cards.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("destination-card");
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.title}">
+      <h3>${item.title}</h3>
+      <p>${item.desc}</p>
+      <button class="book-btn">Book</button>
+    `;
+    wrapperContainer.appendChild(card);
+  });
+
+  attachBookEvents(); 
+}
+attachBookEvents();
+</script>
+
+  <!-- FOOTER SECTION -->
+<footer class="text-center text-lg-start text-white" style="background-color: #1a1a1a;">
+  <div class="container p-4">
+    <div class="row mt-4">
+
+      <!-- BRAND + DESKRIPSI -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #5f86ff;">Travelith<span style="color:white;">Indonesia</span></h5>
+        <p>
+          Travelith Indonesia adalah platform wisata digital yang memudahkan Anda merencanakan perjalanan,
+          mulai dari destinasi, penginapan, hingga itinerary otomatis semua dalam satu tempat.
+        </p>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #5f86ff;">Navigasi</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="schedule.html" class="text-white text-decoration-none">Schedule</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="booking.html" class="text-white text-decoration-none">Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #5f86ff;">Layanan</h5>
+        <ul class="list-unstyled mb-0">
+          <li><span>✦ Pemesanan Tiket & Hotel</span></li>
+          <li><span>✦ Rekomendasi Wisata & Itinerary</span></li>
+          <li><span>✦ Konsultasi Liburan</span></li>
+          <li><span>✦ Panduan Wisata 24/7</span></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #5f86ff;">Hubungi Kami</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i>Surabaya, Jawa Timur, Indonesia</li>
+          <li><i class="fas fa-envelope me-2"></i>support@travelith.id</li>
+          <li><i class="fas fa-phone me-2"></i>+62 812 3456 7890</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(255,255,255,0.05); font-size: 14px;">
+    © 2025 <strong style="color: #5f86ff;">Travelith Indonesia</strong>. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
+
