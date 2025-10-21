@@ -13,7 +13,7 @@ Website pariwisata interaktif yang menampilkan destinasi wisata, jadwal, dan for
 </p>
 <p align="center">
   <img src="SS/experience.png" alt="Experience" width="47%" />
-  <img src="SS/getspecial.png" alt="Get Special" width="47%" />
+  <img src="SS/getspesial.png" alt="Get Special" width="47%" />
 </p>
 <p align="center">
   <img src="SS/app.png" alt="App" width="47%" />
