@@ -29,7 +29,7 @@ Website pariwisata interaktif yang menampilkan destinasi wisata, jadwal, dan for
 ---
 
 ## Video
-
+[Klik di sini](https://youtu.be/VxAf4lGML0Q?si=efVnRnFPJeaSHCX_)
 ---
 
 ## Teknologi yang Digunakan
